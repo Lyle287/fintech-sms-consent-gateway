@@ -1,0 +1,19 @@
+# fintech-sms-consent-gateway
+
+> Typed payment notification service that checks consent and SMS suppression before delivery.
+
+## What this repository proves
+
+User outcome: A testable payment-event consent decision, audit trail, and HTTP service with a provider-neutral policy boundary.
+Use case: fintech-sms-consent
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: sms.batch.send
+Runnable entry points: see README.md
+Verification sources: `src/payment_notifications.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

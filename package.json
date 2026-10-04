@@ -1,0 +1,20 @@
+{
+  "name": "fintech-sms-consent-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/payment_notification_service.ts",
+    "demo": "tsx scripts/send_payment_event.ts",
+    "test": "tsx --test src/payment_notifications.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
